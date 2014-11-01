@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:background="#ffffff"
+     >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/contactpic2" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Divya Soni"
+           android:fontFamily="sans-serif-condensed"
+  
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#282828" />
+
+    <TextView
+        android:id="@+id/Designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cordinator"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#828282"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Designation"
+        android:layout_toRightOf="@+id/imageView1"
+        android:fontFamily="sans-serif-condensed"
+        android:text="nikit1993@gmail.com"
+        android:textColor="#00bf8f"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>

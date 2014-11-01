@@ -1,0 +1,244 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+         android:background="#ffffff"   
+   
+     
+     >
+     <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scrollbars="none"
+        >
+        
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                  android:id="@+id/imgslide"
+                
+                 >
+                 <ViewFlipper
+    android:id="@+id/viewflipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autoStart="true"
+    android:flipInterval="3000" >
+                
+                 
+                <ImageView
+                    android:id="@+id/slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagebanner5"
+                      android:scaleType="centerCrop"
+                     />
+                   <ImageView
+                    android:id="@+id/slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagebanner3"
+                      android:scaleType="centerCrop"
+                     />
+                      <ImageView
+                    android:id="@+id/slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagebanner4"
+                      android:scaleType="centerCrop"
+                     />
+                      </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="21dp"
+                    android:background="#88ffd237"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Aranya 2014"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/fbicon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="4dp" >
+
+                    <com.limitskyapps.aranya2014.SquareImageView
+                        android:id="@+id/ev"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/events2" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/ev"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Events"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="4dp" >
+
+                    <com.limitskyapps.aranya2014.SquareImageView
+                        android:id="@+id/sn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/starnight2" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/sn"
+                        android:layout_alignTop="@+id/sn"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Star Night"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="2dp" >
+
+                    <com.limitskyapps.aranya2014.SquareImageView
+                        android:id="@+id/sc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/schedule2" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Schedule"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp" >
+
+                    <com.limitskyapps.aranya2014.SquareImageView
+                        android:id="@+id/sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sponsors2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/cp"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Sponsors"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+        
+     </FrameLayout>
+         
+      <ListView
+        android:background="#282828"  
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+     
+        />
+     </android.support.v4.widget.DrawerLayout>

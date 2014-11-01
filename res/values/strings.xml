@@ -4,5 +4,33 @@
     <string name="app_name">Aranya2014</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+  
+  
+  <string name="drawer_open">Navigation drawer opens</string>
+  <string name="drawer_close">Navigation drawer closes</string>
+  
+  <string-array name="items">
+        <item>Home</item>
+        <item>Contact us</item>
+        <item>About us</item>
+        <item>Notifications</item>
+        <item>Developers</item>
+  </string-array>
+  
+  <string name="thapar">A Centre of Relevance and Excellence (CORE) has been set up at Thapar University by TIFAC Mission REACH of Department of Science and Technology, Govt. of India in its first phase of setting up eight CORES at various Institutes and Universities spread all over the country.
 
+Science and Technology Entrepreneur\'s Park (STEP) has been established jointly by Thapar University and DST, Govt. of India. Thapar University has impressively grown in size and activities during the last five decades of its existence. Nearly 10,500 engineers have left its portals so far, distinguishing themselves as proud Thaparians in diverse fields in our country and aboard. As a fitting recognition of its pioneering role in promoting the growth and development both at National and International levels.</string>
+	<string name="csr">Corporate Social Responsibility (CSR) is defined as the voluntary activities undertaken by us to operate in an economic, social and environmentally sustainable manner. 
+ANUBHAV
+         In this we are going to make packages for "School students" in which they will be shown "SHAURYA GATHA", "DRDO" Techniques so that they can know more about the soldiers and their techniques and performances by specially abled students So that they can be motivated by the hidden talent of the students. 
+JASHNA
+         Festival is an occasion of celebration and sharing the joy with others. With an intent to share the festivity of Aranya and to give a feeling of joy to underprivileged children we propose to initiate a first of its kind event in Thapar University. A fun filled event for the kids associated with YU and Pratigya, where they can also share the feel of our festival. This is for the first time in Aranya when we are trying to light up the lives of these children and making them a part of Aranya. 
+
+Some of the events of JASHNA
+- Exhibition visits. - Performances by children.
+- Refreshments.
+- Dance Party.</string>
+	<string name="aranya">Aranya is the annual technical festival of Thapar University, Patiala (India) Aranya is a three day long extravaganza that aims to bring the best talents from all over northern India to one platform. Starting in 2006, the golden jubilee year of the university, Aranya has gained more and more popularity overtime. The festival is generally held in the months of October-November each year. It draws the attention of many colleges as well as school students from all over India.
+	    Aranya 2014 have everything it takes to truly take India to a next level.Students from all around the nation compete with each other to achieve excellence.It will be a blend of Tech Events,Workshops,Guest Lecture,Awareness campaign(swachh bharat) and Sports activity.Then after the day of hardwork we enjoy at night through various performances by some of the best in the business.
+	   </string>
 </resources>
