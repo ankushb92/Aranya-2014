@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
@@ -81,7 +83,7 @@ public class TechFragment extends Fragment {
 			// TODO Auto-generated method stub
 			return position;
 		}
-
+		private int lastPosition = -1;
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			// TODO Auto-generated method stub
@@ -103,7 +105,9 @@ public class TechFragment extends Fragment {
 			ImageView contact_image=(ImageView)row.findViewById(R.id.imageView1);
 			contact_image.setImageResource(images[position]);  
 
-
+			Animation animation = AnimationUtils.loadAnimation(getContext(), (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
+			row.startAnimation(animation);
+			lastPosition = position;
 			return row;
 		}
 
