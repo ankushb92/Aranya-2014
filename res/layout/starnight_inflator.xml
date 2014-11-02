@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:radius="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/mika" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:text="View Info >"
+            android:padding="5dp"
+                android:background="#ffd237"
+             android:fontFamily="sans-serif-condensed"
+      
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#282828"
+        android:textStyle="italic"
+        android:typeface="normal"
+           />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/star_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Mika Singh"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00bf8f"
+        android:textStyle="italic"
+        android:typeface="normal" />
+
+</RelativeLayout>

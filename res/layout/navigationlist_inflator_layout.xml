@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="#282828" >
+    android:background="#ffffff" >
 
     <ImageView
         android:id="@+id/imageView1"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:fontFamily="sans-serif-condensed"
-  
+        android:textColor="#4c4c46"
         android:textStyle="bold"
         android:typeface="normal"
         android:textAppearance="?android:attr/textAppearanceLarge" />

@@ -221,6 +221,7 @@
                         android:layout_alignParentTop="true"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Sponsors"
+                        android:layout_marginLeft="7dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textStyle="bold"
                         android:typeface="normal" />
@@ -234,7 +235,7 @@
      </FrameLayout>
          
       <ListView
-        android:background="#282828"  
+        android:background="#ffffff"  
         android:id="@+id/left_drawer"
         android:layout_width="240dp"
         android:layout_height="match_parent"

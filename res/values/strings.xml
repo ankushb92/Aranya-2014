@@ -13,7 +13,7 @@
         <item>Home</item>
         <item>Contact us</item>
         <item>About us</item>
-        <item>Notifications</item>
+        <item>Settings</item>
         <item>Developers</item>
   </string-array>
   
@@ -33,4 +33,6 @@ Some of the events of JASHNA
 	<string name="aranya">Aranya is the annual technical festival of Thapar University, Patiala (India) Aranya is a three day long extravaganza that aims to bring the best talents from all over northern India to one platform. Starting in 2006, the golden jubilee year of the university, Aranya has gained more and more popularity overtime. The festival is generally held in the months of October-November each year. It draws the attention of many colleges as well as school students from all over India.
 	    Aranya 2014 have everything it takes to truly take India to a next level.Students from all around the nation compete with each other to achieve excellence.It will be a blend of Tech Events,Workshops,Guest Lecture,Awareness campaign(swachh bharat) and Sports activity.Then after the day of hardwork we enjoy at night through various performances by some of the best in the business.
 	   </string>
+	   
+	<string name="mika">Mika Singh is a singer, composer, performer, songwriter and occasional actor. Amongst a wide catalogue of songs, the prominent ones are "Singh Is King" (Singh Is King), "Mauja Hi Mauja" (Jab We Met), "Ibn-e-Batuta" (Ishqiya), "Dhanno" (Houseful), "Dhinka Chika" (Ready), "Desi Beat" (Body Guard), "Subah Hone Na De" (Desi Boys), "Pungi" (Agent Vinod), "Ganpat" (Shootout at Lokhandwala), Gabru (album), "Chinta Ta Ta Chita Chita" (Rowdy Rathore), "Main tere agal bagal hun" (Phata Poster Nikla Hero) and Sawan Mein Lag Haye Aag (album), to name a few. He is also known for the "Jaatan (Jat) ka chora" song, which is based on the Jat clan (Haryana) Rani tu mi Raja Son of Sardaar.</string>
 </resources>

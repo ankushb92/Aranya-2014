@@ -53,7 +53,7 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 	private ActionBarDrawerToggle drawerlistener;
 	private MyAdapter myAdapter;
 	ImageView navigation_image;
-	ImageView events_btn;
+	ImageView events_btn,starnight_btn;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -73,6 +73,7 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 		final RelativeLayout imgslider=(RelativeLayout)findViewById(R.id.imgslide);
 		final ImageView sldimg=(ImageView)findViewById(R.id.slide);
 			events_btn=(ImageView)findViewById(R.id.ev);
+			starnight_btn=(ImageView)findViewById(R.id.sn);
 			ViewFlipper vf=(ViewFlipper)findViewById(R.id.viewflipper);
 			
 			
@@ -96,6 +97,19 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 			//events_btn.getBackground().setColorFilter(Color.BLACK, PorterDuff.Mode.DARKEN);
 				v.startAnimation(AnimationUtils.loadAnimation(HomeTest2.this, R.anim.imagealpha));
 				Intent i=new Intent(HomeTest2.this,Events.class);
+				i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+				startActivityForResult(i,0);	
+			}
+		});
+starnight_btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			//events_btn.getBackground().setColorFilter(Color.BLACK, PorterDuff.Mode.DARKEN);
+				v.startAnimation(AnimationUtils.loadAnimation(HomeTest2.this, R.anim.imagealpha));
+				Intent i=new Intent(HomeTest2.this,StarNight.class);
 				i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 				startActivityForResult(i,0);	
 			}
@@ -170,8 +184,9 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 		else if(position==3){
 			//bhalu enter your code
 			
-			Toast.makeText(this,"Notifications disabled",2000).show();
-			
+			Intent i=new Intent(HomeTest2.this,Settings.class);
+			i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			startActivityForResult(i,0);
 			
 			
 		}
@@ -211,7 +226,7 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 		private Context context;
 		String [] items1;
 
-		int [] images={R.drawable.home,R.drawable.contactus,R.drawable.aboutus,R.drawable.notification,R.drawable.developers};
+		int [] images={R.drawable.home2,R.drawable.contactus2,R.drawable.aboutus2,R.drawable.settings,R.drawable.developers2};
 		public MyAdapter(Context context){
 			this.context=context;
 			items1=context.getResources().getStringArray(R.array.items);

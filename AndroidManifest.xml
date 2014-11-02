@@ -83,6 +83,57 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.limitskyapps.aranya2014.Settings"
+          
+            android:label="@string/app_name" 
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            
+            android:screenOrientation="portrait"
+            >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+              
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.limitskyapps.aranya2014.StarNight"
+          
+            android:label="@string/app_name" 
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            
+            android:screenOrientation="portrait"
+            >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+              
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.limitskyapps.aranya2014.StarPage"
+          
+            android:label="@string/app_name" 
+            android:parentActivityName="com.limitskyapps.aranya2014.StarNight"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            
+            android:screenOrientation="portrait"
+            >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+              
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
            <activity
             android:name="com.limitskyapps.aranya2014.Developer"
           

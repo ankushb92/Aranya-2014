@@ -1,37 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-     android:background="@drawable/aranya" >
+
      
-<RelativeLayout 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="20dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
+    android:orientation="vertical" 
+    android:background="@drawable/sportsbg"
     >
-     <TextView 
-         android:id="@+id/t1"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:gravity="center"
-         android:text="ARANYA"
-         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-         />
-    <TextView
-        android:layout_below="@+id/t1" 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="#000000"
-        android:textSize="15dp"
-        android:layout_centerInParent="true"/>
-     
- 
-</RelativeLayout>
-</ScrollView>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+         android:divider="@android:color/transparent"
+         android:dividerHeight="10.0sp"
+        android:scrollbars="none"
+        >
+    </ListView>
+
+</LinearLayout>
+
+
