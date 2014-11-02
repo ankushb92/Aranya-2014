@@ -4,6 +4,7 @@ package com.limitskyapps.aranya2014;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,14 +18,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
- 
+import android.content.res.AssetManager;
+
 public class TechFragment extends Fragment {
 	private ListView techlist;
 	private TechAdapter techAdapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
- 
+    	 
         View rootView = inflater.inflate(R.layout.fragment_tech, container, false);
     	techlist=(ListView)rootView.findViewById(R.id.listView1);
 	    techAdapter=new TechAdapter(getActivity());
@@ -36,14 +38,14 @@ public class TechFragment extends Fragment {
 					int position, long id) {
 				// TODO Auto-generated method stub
 				
-                if(position==0){
+                
 		    		
-		    		
-					Intent i=new Intent(getActivity(),EventOnClick.class);
-					i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-					startActivityForResult(i,0);
-		    		
-		    	}
+			Intent i=new Intent(getActivity(),EventOnClick.class);
+			i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			i.putExtra("position", position);
+			startActivityForResult(i, 0);
+	    		
+	    	
 			
 			}
 		
@@ -57,10 +59,10 @@ public class TechFragment extends Fragment {
 	private class TechAdapter extends BaseAdapter{
 
 		private Context context;
-
+		
 		int [] images={R.drawable.hover_on,R.drawable.inclino,R.drawable.water_rocket,R.drawable.detector,R.drawable.ideate,R.drawable.arjun,R.drawable.chemicannon};
 
-		String []name ={"HOVER-ON","INCLINO","WATER ROCKET","MIND DETECTOR","IDEATE","ARJUN","CHEMI-CANON"};
+		String []name ={"HOVER-ON","INCLINO","WATER ROCKET","MINE DETECTOR","IDEATE","ARJUN","CHEMI-CANON"};
 		
 
 		public TechAdapter(Context c){
@@ -105,7 +107,7 @@ public class TechFragment extends Fragment {
 			ImageView contact_image=(ImageView)row.findViewById(R.id.imageView1);
 			contact_image.setImageResource(images[position]);  
 
-			Animation animation = AnimationUtils.loadAnimation(getContext(), (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
+			Animation animation = AnimationUtils.loadAnimation(context, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
 			row.startAnimation(animation);
 			lastPosition = position;
 			return row;
