@@ -10,7 +10,8 @@
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-<LinearLayout 
+		
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
@@ -56,14 +57,14 @@
                     android:id="@+id/slide"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagebanner3"
+                    android:src="@drawable/aranyabg1"
                       android:scaleType="centerCrop"
                      />
                       <ImageView
                     android:id="@+id/slide"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/imagebanner4"
+                    android:src="@drawable/aranyabg2"
                       android:scaleType="centerCrop"
                      />
                       </ViewFlipper>
@@ -95,6 +96,15 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="11dp"
                     android:src="@drawable/fbicon" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ytbtn" />
 
             </RelativeLayout>
 
@@ -156,7 +166,7 @@
                         android:layout_alignTop="@+id/sn"
                         android:layout_marginLeft="7dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Star Night"
+                        android:text="Shows"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textStyle="bold"
                         android:typeface="normal" />
@@ -231,8 +241,7 @@
     </ScrollView>
 
 </LinearLayout>
-        
-     </FrameLayout>
+ </FrameLayout>
          
       <ListView
         android:background="#ffffff"  
@@ -243,3 +252,5 @@
      
         />
      </android.support.v4.widget.DrawerLayout>
+        
+    

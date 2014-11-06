@@ -53,7 +53,7 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 	private ActionBarDrawerToggle drawerlistener;
 	private MyAdapter myAdapter;
 	ImageView navigation_image;
-	ImageView events_btn,starnight_btn;
+	ImageView events_btn,starnight_btn,sponsors;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -74,6 +74,8 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 		final ImageView sldimg=(ImageView)findViewById(R.id.slide);
 			events_btn=(ImageView)findViewById(R.id.ev);
 			starnight_btn=(ImageView)findViewById(R.id.sn);
+			sponsors=(ImageView)findViewById(R.id.sp);
+			
 			ViewFlipper vf=(ViewFlipper)findViewById(R.id.viewflipper);
 			
 			
@@ -97,6 +99,19 @@ public class HomeTest2 extends ActionBarActivity implements OnItemClickListener{
 			//events_btn.getBackground().setColorFilter(Color.BLACK, PorterDuff.Mode.DARKEN);
 				v.startAnimation(AnimationUtils.loadAnimation(HomeTest2.this, R.anim.imagealpha));
 				Intent i=new Intent(HomeTest2.this,Events.class);
+				i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+				startActivityForResult(i,0);	
+			}
+		});
+sponsors.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			//events_btn.getBackground().setColorFilter(Color.BLACK, PorterDuff.Mode.DARKEN);
+				v.startAnimation(AnimationUtils.loadAnimation(HomeTest2.this, R.anim.imagealpha));
+				Intent i=new Intent(HomeTest2.this,Sponsors.class);
 				i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 				startActivityForResult(i,0);	
 			}

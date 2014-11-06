@@ -32,7 +32,7 @@ public class StarNight extends Activity{
 		setContentView(R.layout.starnight_layout);
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00bf8f")));
-		bar.setTitle("Star Night");
+		bar.setTitle("Shows");
 
 		bar.setDisplayHomeAsUpEnabled(true);
 
@@ -65,12 +65,11 @@ public class StarNight extends Activity{
 	private class StarAdapter extends BaseAdapter{
 
 		private Context context;
+		int [] images={R.drawable.gmann,R.drawable.lasernight,R.drawable.wheelchair};
 
-		int [] images={R.drawable.mika,R.drawable.sun,R.drawable.gmann};
-
-		String []name ={"Mika Singh","Sunidhi Chauhan","Gurdas Mann"};
-		
-
+		String []name ={"Gurdas Maan","Laser Show","Wheel Chair Dance"};
+        String []date={"15 Nov","14 Nov","14 Nov"};		
+        String []desig={"Singer/Composer","Show","Show"};
 		public StarAdapter(Context c){
 			this.context=c;
 		}
@@ -107,9 +106,19 @@ public class StarNight extends Activity{
 				row=convertView;	  
 			}
 			TextView star_name=(TextView)row.findViewById(R.id.star_name);
+			TextView dates=(TextView)row.findViewById(R.id.date);
+			TextView designation=(TextView)row.findViewById(R.id.Designation);
+			TextView Viewinfo=(TextView)row.findViewById(R.id.textView1);
+			if((position==1) || (position==2)){
+				Viewinfo.setText("");
+			    Viewinfo.setBackgroundColor(Color.TRANSPARENT);
+			}
+			
 			
 			star_name.setText(name[position]);
+			dates.setText(date[position]);
 			
+			designation.setText(desig[position]);
 			RelativeLayout star_image=(RelativeLayout)row.findViewById(R.id.relativeLayout1);
 			star_image.setBackgroundResource(images[position]);  
 
