@@ -84,38 +84,38 @@ public class Home extends ActionBarActivity implements OnItemClickListener{
 		getSupportActionBar().setHomeButtonEnabled(true);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-     //gridView
+		//gridView
 		mygrid=(GridView)findViewById(R.id.gridview);
 		//mygrid.setExpanded(true);
 		mygrid.setAdapter(new GridAdapter(this));
-		
+
 		//onclick for grid view
 		mygrid.setOnItemClickListener(new OnItemClickListener() 
 		{
-		    public void onItemClick(AdapterView<?> parent, View v, int position, long id) 
-		    {
-		        // this 'mActivity' parameter is Activity object, you can send the current activity.
-		    	
-		    	
-		    	if(position==0){
-		    		
-		    		
+			public void onItemClick(AdapterView<?> parent, View v, int position, long id) 
+			{
+				// this 'mActivity' parameter is Activity object, you can send the current activity.
+
+
+				if(position==0){
+
+
 					Intent i=new Intent(Home.this,Events.class);
 					i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 					startActivityForResult(i,0);
-		    		
-		    	}
-		       }
+
+				}
+			}
 		});
 		mygrid.setOnTouchListener(new OnTouchListener(){
 
-		    @Override
-		    public boolean onTouch(View v, MotionEvent event) {
-		        if(event.getAction() == MotionEvent.ACTION_MOVE){
-		            return true;
-		        }
-		        return false;
-		    }
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if(event.getAction() == MotionEvent.ACTION_MOVE){
+					return true;
+				}
+				return false;
+			}
 
 		});
 
@@ -153,35 +153,35 @@ public class Home extends ActionBarActivity implements OnItemClickListener{
 		// TODO Auto-generated method stub
 		selectItem(position);
 		if(position==1){
-			
+
 			Intent i=new Intent(Home.this,ContactUs.class);
 			i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 			startActivityForResult(i,0);
-			
+
 		}
 		else if(position==3){
 			//bhalu enter your code
-			
+
 			Toast.makeText(this,"Notifications disabled",2000).show();
-			
-			
-			
+
+
+
 		}
 		else
 			if(position==4){
-				
+
 				Intent i=new Intent(Home.this,Developer.class);
 				i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 				startActivityForResult(i,0);
-				
+
 			}
 			else
 				if(position==2){
-					
+
 					Intent i=new Intent(Home.this,AboutUs.class);
 					i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 					startActivityForResult(i,0);
-					
+
 				}
 
 	}
@@ -252,89 +252,89 @@ public class Home extends ActionBarActivity implements OnItemClickListener{
 		}
 
 	}
-	
+
 	private class GridAdapter extends BaseAdapter
 	{
-	    private List<Item> items = new ArrayList<Item>();
-	    private LayoutInflater inflater;
+		private List<Item> items = new ArrayList<Item>();
+		private LayoutInflater inflater;
 
-	    public GridAdapter(Context context)
-	    {
-	        inflater = LayoutInflater.from(context);
+		public GridAdapter(Context context)
+		{
+			inflater = LayoutInflater.from(context);
 
-	        items.add(new Item("Events", R.drawable.events));
-	        items.add(new Item("StarNight", R.drawable.starnight));
-	        items.add(new Item("Schedule", R.drawable.schedule));
-	        items.add(new Item("Sponsors", R.drawable.sponsors));
-	 
-	    }
+			items.add(new Item("Events", R.drawable.events));
+			items.add(new Item("StarNight", R.drawable.starnight));
+			items.add(new Item("Schedule", R.drawable.schedule));
+			items.add(new Item("Sponsors", R.drawable.sponsors));
 
-	    @Override
-	    public int getCount() {
-	        return items.size();
-	    }
+		}
 
-	    @Override
-	    public Object getItem(int i)
-	    {
-	        return items.get(i);
-	    }
+		@Override
+		public int getCount() {
+			return items.size();
+		}
 
-	    @Override
-	    public long getItemId(int i)
-	    {
-	        return items.get(i).drawableId;
-	    }
+		@Override
+		public Object getItem(int i)
+		{
+			return items.get(i);
+		}
 
-	    @Override
-	    public View getView(int i, View view, ViewGroup viewGroup)
-	    {
-	        View v = view;
-	        ImageView picture;
-	        TextView name;
+		@Override
+		public long getItemId(int i)
+		{
+			return items.get(i).drawableId;
+		}
+		private int lastPosition = -1;
+		@Override
+		public View getView(int i, View view, ViewGroup viewGroup)
+		{
+			View v = view;
+			ImageView picture;
+			TextView name;
 
-	        if(v == null)
-	        {
-	           v = inflater.inflate(R.layout.gridview_item, viewGroup, false);
-	           v.setTag(R.id.picture, v.findViewById(R.id.picture));
-	           v.setTag(R.id.text, v.findViewById(R.id.text));
-	        }
+			if(v == null)
+			{
+				v = inflater.inflate(R.layout.gridview_item, viewGroup, false);
+				v.setTag(R.id.picture, v.findViewById(R.id.picture));
+				v.setTag(R.id.text, v.findViewById(R.id.text));
+			}
 
-	        picture = (ImageView)v.getTag(R.id.picture);
-	        name = (TextView)v.getTag(R.id.text);
+			picture = (ImageView)v.getTag(R.id.picture);
+			name = (TextView)v.getTag(R.id.text);
 
-	        Item item = (Item)getItem(i);
+			Item item = (Item)getItem(i);
 
-	        picture.setImageResource(item.drawableId);
-	        name.setText(item.name);
-	        if(i==0){
-	        	name.setBackgroundColor(0x88ffd237);
-	        }
-	        else if(i==1){
-	        	
-	        	name.setBackgroundColor(0x8800a2e8);
-	        }
-	else if(i==2){
-		name.setBackgroundColor(0x88b5e61d);
-	        }
-	else{
-		name.setBackgroundColor(0x88ed1c24);
-	}
+			picture.setImageResource(item.drawableId);
+			name.setText(item.name);
+			if(i==0){
+				name.setBackgroundColor(0x88ffd237);
+			}
+			else if(i==1){
 
-	        return v;
-	    }
+				name.setBackgroundColor(0x8800a2e8);
+			}
+			else if(i==2){
+				name.setBackgroundColor(0x88b5e61d);
+			}
+			else{
+				name.setBackgroundColor(0x88ed1c24);
+			}
 
-	    private class Item
-	    {
-	        final String name;
-	        final int drawableId;
+			return v;
+		}
 
-	        Item(String name, int drawableId)
-	        {
-	            this.name = name;
-	            this.drawableId = drawableId;
-	        }
-	    }
+		private class Item
+		{
+			final String name;
+			final int drawableId;
+
+			Item(String name, int drawableId)
+			{
+				this.name = name;
+				this.drawableId = drawableId;
+			}
+		}
 	}
 
 

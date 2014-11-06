@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gmann"
+    android:background="@drawable/starnightbg"
     android:orientation="vertical" >
  
 
@@ -10,9 +10,10 @@
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" 
-         android:paddingLeft="15dp"
-         android:paddingRight="15dp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
          android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
           android:scrollbars="none"
            android:divider="@android:color/transparent"
          android:dividerHeight="10.0sp"
