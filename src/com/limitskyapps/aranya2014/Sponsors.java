@@ -47,7 +47,7 @@ public class Sponsors extends Activity{
 		{
 			inflater = LayoutInflater.from(context);
 
-			items.add(new Item("Avantha Tech.", R.drawable.avantha));
+			items.add(new Item("Avantha Group", R.drawable.avantha));
 			items.add(new Item("92.7 Big FM", R.drawable.big));
 			items.add(new Item("Aaghaz", R.drawable.aagazh));
 			

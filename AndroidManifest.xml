@@ -15,25 +15,20 @@
         android:theme="@style/Theme.AppCompat" >
         <activity
             android:name="com.limitskyapps.aranya2014.SplashScreen"
-            
-            android:label="@string/app_name" 
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-             <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.Home"
-            android:label="@string/app_name" 
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,179 +37,146 @@
         </activity>
         <activity
             android:name="com.limitskyapps.aranya2014.HomeTest2"
-            android:label="@string/app_name" 
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-              <activity
-            android:name="com.limitskyapps.aranya2014.Hometest"
             android:label="@string/app_name"
-            android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-             >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-            <activity
-            android:name="com.limitskyapps.aranya2014.ContactUs"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+        <activity
+            android:name="com.limitskyapps.aranya2014.Hometest"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.limitskyapps.aranya2014.ContactUs"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.limitskyapps.aranya2014.Settings"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.StarNight"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.limitskyapps.aranya2014.StarPage"
-          
-            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/app_name"
             android:parentActivityName="com.limitskyapps.aranya2014.StarNight"
-            android:configChanges="orientation|keyboardHidden|keyboard"
-            
-            android:screenOrientation="portrait"
-            >
-            
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-           <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.Developer"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-                 <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.AboutUs"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-                <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.Events"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-          <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.EventOnClick"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-               <activity
+        <activity
             android:name="com.limitskyapps.aranya2014.Sponsors"
-          
-            android:label="@string/app_name" 
-            android:parentActivityName="com.limitskyapps.aranya2014.Home"
             android:configChanges="orientation|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            >
-            
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-              
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-             
+        <activity
+            android:name="com.limitskyapps.aranya2014.Schedule"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/app_name"
+            android:parentActivityName="com.limitskyapps.aranya2014.Home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
