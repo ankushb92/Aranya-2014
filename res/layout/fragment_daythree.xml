@@ -18,7 +18,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/ssbbg" >
+        android:background="@drawable/code" >
 
     </RelativeLayout>
 
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
            android:gravity="center"
-         android:text="SSB Training"
+         android:text="16TH NOVEMBER"
          android:textColor="#ffffff"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
